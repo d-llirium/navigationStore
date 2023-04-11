@@ -11,6 +11,7 @@ struct ContentView: View {
     var body: some View {
         // Navigation view acts a container for navigable views and content
         NavigationView {
+            // Children views a user can navigate to and from
             ZStack{
                 VStack {
                     Text("Items in Stock").font(.title)
@@ -26,8 +27,11 @@ struct ContentView: View {
                     Spacer()
                 }
             }
+            // Sets a navigation title of "Navigation Store"
+            .navigationTitle(Text("Navigation Store"))
+            // Sets the styling of the navigation title to inline
+            .navigationBarTitleDisplayMode(.inline)
         }
-        
     }
 }
 
