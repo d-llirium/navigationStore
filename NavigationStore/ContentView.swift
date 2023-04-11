@@ -9,21 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack{
-            VStack {
-                Text("Items in Stock").font(.title)
-                    .padding()
-                Spacer()
-                Button {
-                    // action
-                    print("Button tapped")
-                } label: {
-                    // view for visual presentation
-                    Text("Item")
+        // Navigation view acts a container for navigable views and content
+        NavigationView {
+            ZStack{
+                VStack {
+                    Text("Items in Stock").font(.title)
+                        .padding()
+                    Spacer()
+                    // Adding the NavigationLink moves the user to the item screen
+                    NavigationLink(
+                        destination: ItemDetailView(itemName: "Shrimp Chips"),
+                        label: {
+                            Text("Item: Shirmp Chips")
+                        }
+                    )
+                    Spacer()
                 }
-                Spacer()
             }
         }
+        
     }
 }
 
