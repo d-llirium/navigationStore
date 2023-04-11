@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ItemDetailView: View {
+    // Generate a random number representing items and store in @State
+    @State var quantityRemaining = Int.random(in: 1...10)
     let itemName: String
     var body: some View {
         ZStack {
@@ -17,10 +19,12 @@ struct ItemDetailView: View {
                 Spacer()
                 Image(systemName: "photo").font(.system(size: 200))
                     .padding()
-                Text("Quantity Remaining: 3")
+                Text("Quantity Remaining: \(quantityRemaining)")
                 Spacer()
                 Button {
-                    print("\(itemName) Added to the cart")
+                    if quantityRemaining > 0 {
+                        quantityRemaining -= 1
+                    }
                 } label: {
                     Text("Add one to your cart")
                 }
