@@ -11,6 +11,7 @@
 		CED89A3629E5EEC9003B34BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED89A3529E5EEC9003B34BC /* ContentView.swift */; };
 		CED89A3829E5EECD003B34BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED89A3729E5EECD003B34BC /* Assets.xcassets */; };
 		CED89A3B29E5EECD003B34BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED89A3A29E5EECD003B34BC /* Preview Assets.xcassets */; };
+		CED89A4229E5F136003B34BC /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED89A4129E5F136003B34BC /* ItemDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		CED89A3529E5EEC9003B34BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CED89A3729E5EECD003B34BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED89A3A29E5EECD003B34BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CED89A4129E5F136003B34BC /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				CED89A3329E5EEC9003B34BC /* NavigationStoreApp.swift */,
 				CED89A3529E5EEC9003B34BC /* ContentView.swift */,
+				CED89A4129E5F136003B34BC /* ItemDetailView.swift */,
 				CED89A3729E5EECD003B34BC /* Assets.xcassets */,
 				CED89A3929E5EECD003B34BC /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED89A4229E5F136003B34BC /* ItemDetailView.swift in Sources */,
 				CED89A3629E5EEC9003B34BC /* ContentView.swift in Sources */,
 				CED89A3429E5EEC9003B34BC /* NavigationStoreApp.swift in Sources */,
 			);
