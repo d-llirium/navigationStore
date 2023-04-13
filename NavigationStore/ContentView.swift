@@ -13,9 +13,9 @@ struct ContentView: View {
         // Navigation view acts a container for navigable views and content
         NavigationView {
             // Children views a user can navigate to and from
-            ZStack{
+            ZStack {
                 VStack {
-                    Text("Items in Stock").font(.title)
+                    Text("Items in Stock").font(.title).bold()
                         .padding()
                     Spacer()
                     ForEach( 0 ..< items.count, id: \.self ) { itemIndex in // Define the view that will be returned for each index
@@ -24,12 +24,13 @@ struct ContentView: View {
                             label: {
                                 Text("Item: \(items[itemIndex])")
                                     .padding()
+                                    .background(.yellow)
                                     .border(.blue, width: 4)
                             }
                         )
                         Spacer()
                     }
-                }
+                }.foregroundColor(.red)
             }
             // Sets a navigation title of "Navigation Store"
             .navigationTitle(Text("Navigation Store"))
